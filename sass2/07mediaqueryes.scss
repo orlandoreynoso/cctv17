@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1024px) {  }
+
+
+
+@media only screen and (max-width: 959px) {
+  #page-wrap {
+    flex-direction: column;
+    max-width: 959px;
+  }
+  #cabecera-contenedor {
+    max-width: 959px;
+  }
+  #cabecera-contenedor #cc-logo-slogan {
+  /*  background-color: #333; /*NEGRO-GRIS*/
+    display: flex;
+    width: 50%;
+  }
+
+  #cabecera #cabecera-contenedor #cc-search-followers{
+    display: flex;
+    flex-direction: column;
+ }
+
+  #cabecera-contenedor #cc-logo-slogan .logo-link {
+    width: 100%;
+    padding-top:10px;
+    height: 100px;
+    overflow: hidden;
+  }
+  #cabecera-contenedor #cc-logo-slogan .logo-link img {
+    width: auto;
+    height: 100%;
+    vertical-align: top;
+    margin: 0px;
+    padding:0px;
+  }
+  #cabecera-contenedor #cc-logo-slogan .slogan {
+    width: 60%;
+  }
+  #cabecera-contenedor #cc-logo-slogan .slogan .one {
+    font-size: 1.7em;
+/*    color: #f00;*/
+  }
+  #cabecera-contenedor #cc-logo-slogan .slogan .two {
+    font-size: 1.7em;
+/*    color: #008000;*/
+  }
+
+  #cabecera-contenedor #cc-search-followers {
+    width: 50%;
+  }
+
+.player-seccions {
+  max-width: 959px;
+  display: flex;
+}
+.player-seccions .contenido {
+  max-width: 959px;
+  height: auto;
+  background-color: #ffa500;
+}
+.player-seccions .contenido .noticias {
+  width: 100%;
+}
+.player-seccions .contenido .redes {
+  width: 100%;
+}
+
+.menu_bar{
+  display: block;
+  background-color: $amarillo;
+  color: $colortexto;
+  padding: 15px;
+}
+
+
+header nav .menu{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+footer .group #direccion{
+  width: 100%;
+}
+
+footer .group #desarrollo{
+  width: 100%;
+}
+
+
+}
+
+

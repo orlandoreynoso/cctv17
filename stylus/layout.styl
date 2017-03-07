@@ -1,0 +1,304 @@
+
+html,body,div
+	margin 0
+	padding 0
+*
+	margin 0
+	padding 0
+	box-sizing border-box	
+	
+body
+	background-color #fff
+
+#page-wrap
+	display flex
+	/*flex-flow row wrap*/
+	flex-direction row
+	flex-wrap wrap
+	width 100%
+
+
+.zero-grid
+	width t1024
+
+
+header
+	width 100%
+
+
+#cabecera
+	width 100%
+
+
+#cabecera-contenedor
+	max-width t1024
+	background-color #fff
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content space-between
+	margin 0px auto
+	align-items center
+	padding 20px
+	
+	
+	#cc-logo-slogan
+		width 50%
+		vertical-align top  
+		display flex
+		
+		.logo-link
+			width 148
+			height 149
+			
+			
+		.slogan
+			line-height 30px
+			display flex
+			flex-direction column
+			justify-content center
+			margin-left 16px
+			text-decoration none
+			text-transform uppercase
+			font-weight bold
+			
+			&:hover
+				color #00bbd3
+			
+
+			span 
+				font-family 'monofontoregular'
+				&:hover
+					color #00bbd3	
+				
+			.one
+				color #ffd933
+				font-size 42px
+				/*&:hover
+					color #474b4d					*/
+
+			.two
+				color #474b4d
+				font-size 30px
+				margin-top 4px				
+				 
+		
+	#cc-search-followers
+		width 50%
+		display flex
+		justify-content space-between
+		align-items center
+		
+		.buscador
+			width 75%
+			
+		.cuadro-redes
+			width 20%
+			margin-left 4px
+			display flex
+			justify-content space-between
+			padding 6px
+			color #474b4d
+			
+			.fb
+				color #474b4d
+				width 100px
+				padding 10px
+				
+				&:hover
+					color #8ac249				
+			.tw
+				color #474b4d
+				width 100px
+				padding 10px
+				
+				&:hover
+					color #8ac249					
+					
+			.yt 
+				color #474b4d
+				width 100px
+				padding 10px
+				
+				&:hover
+					color #8ac249						
+			a
+				text-decoration none
+				
+
+
+nav
+	background-color #474b4d
+	margin 0px auto	
+	width 100%
+
+	.menu-principal-container
+		max-width t1024
+		margin 0px auto
+			
+
+		ul.menu
+			background-color #ffd933
+			height 96px
+			list-style none		
+			
+			/*FLEX*/
+			display flex
+			justify-content space-around
+
+			li 
+				align-items center
+				flex-grow 1
+				text-align center
+				margin 0px auto
+				overflow hidden
+				
+		
+				
+				a
+					vertical-align top
+					display block
+					vertical-align middle
+					padding 36px 0px 36px 0px
+					font-family 'Myriad Pro'
+					color #474b4d
+					text-transform uppercase
+					text-decoration none
+					
+					&:hover
+						background-color white
+						color #474b4d
+
+section 
+	width 100%
+	margin 0px auto
+
+
+.contenido
+	clear both
+	margin 0px auto
+	max-width 1024px
+	box-sizing border-box
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	padding 20px
+	
+	.noticias
+		padding 20px 10px 20px 10px
+		width 66%
+		vertical-align top
+		
+	.redes
+		width 33%
+		padding 10px
+		
+		iframe
+			margin 0
+			padding 0
+			width 100%
+
+
+.player-seccions 
+	margin 0px auto
+	max-width 1024px
+	height auto
+	background-color #f5f5f5
+	display flex
+	flex-wrap wrap
+	flex-direction row
+	justify-content space-between
+	padding 30px 5px 15px 5px
+	
+
+
+	.player
+		width 50%
+		padding 0px
+		margin 0px
+		
+		iframe
+			width 100%
+			height 415px
+			padding 0px
+			margin 0px			
+
+
+	.seccions
+		width 50%
+		height auto
+		display flex
+		flex-wrap wrap
+		justify-content center		
+		align-items stretch
+
+		
+		.secciones
+			width 180px
+			background-color #8ac249
+			flex-grow 1
+			display block
+			margin 10px
+			text-align center
+			vertical-align middle
+			align-items center
+			justify-content center
+			display flex
+			color #fff
+			text-decoration none
+			font-family 'Myriad Pro'
+			text-transform uppercase
+			font-size 14px;
+			padding 10px		
+		
+			span
+				margin-right 5px	
+			
+		.seccions_1
+			background-color #fec006
+			padding-left 3px
+			
+			&:hover
+				background-color #8ac249
+				
+		.seccions_2						
+			background-color #8ac249
+			padding-left 3px			
+			
+			
+			&:hover			
+				background-color #00bbd3			
+				
+		.seccions_3			
+			background-color #00bbd3
+			padding-left 3px			
+			
+			&:hover
+				background-color #fec006
+					
+			
+		.seccions_4			
+			background-color #fec006
+			padding-left 3px			
+			
+			&:hover	
+				background-color #8ac249			
+
+
+.icon-library
+	display inline-block
+
+.icon-library:before 
+		content '\e90b'
+
+
+
+
+
+
+footer
+	width 100%
+	margin 0px auto
+	background-color #00bbd3
+	align-self flex-end
+

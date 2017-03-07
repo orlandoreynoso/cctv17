@@ -1,0 +1,138 @@
+header {
+  width: 100%;
+}
+
+#cabecera {
+  width: 100%;
+}
+
+#cabecera-contenedor {
+  max-width: 1024px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+  align-items: center;
+  padding: 20px;
+}
+
+
+#cabecera-contenedor #cc-logo-slogan {
+  width: 50%;
+  vertical-align: top;
+  display: flex;
+}
+
+#cabecera-contenedor #cc-logo-slogan .logo-link{
+	height: 150px;
+	overflow: hidden
+}
+
+#cabecera-contenedor #cc-logo-slogan .logo-link img{
+	display: block;
+	vertical-align:top;
+	width: auto;
+	height: 150px;
+}
+
+
+#cabecera-contenedor #cc-logo-slogan .logo-link:hover{
+  opacity: 0.7;
+  filter:  alpha(opacity=70);
+}
+
+
+#cabecera-contenedor #cc-logo-slogan .slogan {
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#cabecera-contenedor #cc-logo-slogan .slogan:hover {
+  color: #00bbd3;
+}
+
+#cabecera-contenedor #cc-logo-slogan .slogan span {
+  font-family: 'monofontoregular';
+  @include transicion_a();  
+}
+
+#cabecera-contenedor #cc-logo-slogan .slogan span:hover {
+  color: #00bbd3;
+  @include transicion_a();
+}
+
+#cabecera-contenedor #cc-logo-slogan .slogan .one {
+  @include transicion_a();  
+  color: #ffd933;
+  font-size: 42px;
+/*&:hover
+					color #474b4d					*/
+}
+
+#cabecera-contenedor #cc-logo-slogan .slogan .two {
+  @include transicion_a();  
+  color: #474b4d;
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+#cabecera-contenedor #cc-search-followers {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cabecera-contenedor #cc-search-followers .buscador {
+  width: 75%;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes {
+  width: 20%;
+  margin-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  color: #474b4d;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes .fb {
+  color: #474b4d;
+  width: 100px;
+  padding: 10px;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes .fb:hover {
+  color: #8ac249;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes .tw {
+  color: #474b4d;
+  width: 100px;
+  padding: 10px;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes .tw:hover {
+  color: #8ac249;
+}
+
+#cabecera-contenedor #cc-search-followers .cuadro-redes .yt {
+  color: #474b4d;
+  width: 100px;
+  padding: 10px;
+}
+#cabecera-contenedor #cc-search-followers .cuadro-redes .yt:hover {
+  color: #8ac249;
+}
+#cabecera-contenedor #cc-search-followers .cuadro-redes a {
+  text-decoration: none;
+  @include transicion_a();
+}
