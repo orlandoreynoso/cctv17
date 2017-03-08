@@ -1,24 +1,18 @@
-
-
-
-<!-- Archivo de cabecera global de Wordpress -->
 <?php 
 
-
 /*
+  Template Name: Categorias
+  Template Post Type: post, page, product
+*/
 
-Template Name: Categorias
+ get_header();
 
- */
-
- ?>
-
-
-<?php get_header(); ?>
+?>
 
 <section class="contenido">
 
   <article class="noticias">
+    <?php echo 'Estoy en categorias'; ?>
     <div class="mapeo"><?php the_breadcrumb(); ?></div>        
 
 <!-- Título de categoría -->

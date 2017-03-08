@@ -9,6 +9,9 @@
 
 */
  
+.menu_bar {
+	display:none;
+}
 
 header nav {
 	max-width:1024px;
@@ -18,9 +21,6 @@ header nav {
 	@include borde_gris();
 }
  
-.menu_bar {
-	display:none;
-}
  
 header nav ul {
 	overflow:hidden;

@@ -1,10 +1,20 @@
 <!-- Archivo de cabecera gobal de Wordpress -->
-<?php get_header(); ?>
 
+<?php 
 
+/*
+  Template Name: sigle
+  Template Post Type: post, page, product
+*/
+
+ get_header();
+
+?>
 <section class="contenido">
 
   <article class="noticias">
+
+    <?php echo 'estoy en single'; ?>
 
 <!-- Contenido del post -->
 <?php if ( have_posts() ) : the_post(); ?>

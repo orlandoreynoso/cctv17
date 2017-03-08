@@ -1,13 +1,73 @@
+@mixin logo($size)
+	.logo-link
+		&:hover
+			opacity: 0.7
+			filter: alpha(opacity=70)
+		img
+			vertical-align: top
+			width: auto
+			height: $size
+@mixin buscaredes()
+	.buscador
+		width: 75%
+	.cuadro-redes
+		width: 20%
+		margin-left: 4px
+		display: flex
+		justify-content: space-between
+		padding: 6px
+		color: $gris
+		a
+			text-decoration: none
+			@include transicion_a()
+		.yt
+			color: $gris
+			width: 100px
+			padding: 10px
+			&:hover
+				color: $limon
+		.fb
+			color: $gris
+			width: 100px
+			padding: 10px
+			&:hover
+				color: $limon
+		.tw
+			color: $gris
+			width: 100px
+			padding: 10px
+			&:hover
+				color: $limon
 header
 	width: 100%
+	background-color: cyan
+	.ca-cabecera
+		width: 100%
+		.ca-logo-slogan
+			background-color: green
+			width: 100%
+			@include logo(150px)
+		.ca-search-followers
+			width: auto
+			max-height: 150px			
+			box-sizing: border-box
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: 40px
+			padding-bottom: 20px
+			background-color: red
+			@include buscaredes()
+/*=========== Nuevo ==================*/
 
+
+/*===================================*/
+/*==============================*/
 #cabecera
 	width: 100%
-
-/*================================*/
 #cabecera-contenedor
 	max-width: 1024px
-	background-color: $blanco
+	background-color: blue
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap

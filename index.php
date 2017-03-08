@@ -4,7 +4,8 @@
 
 /*
 
-Template Name: Blogear
+Template Name: Index
+Template Post Type: post, page, product
 
  */
 
@@ -32,6 +33,7 @@ Template Name: Blogear
 
 
 <div class="entradas-noticias">
+	<?php echo 'estoy en el index'; ?>
 
   <div class="fecha">
     <span class="label1"><?php the_time('j  '); ?></span>

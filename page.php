@@ -2,6 +2,7 @@
 
 /*
 Template Name: Interiores
+Template Post Type: post, page, product
  */
 
  get_header();
@@ -12,6 +13,7 @@ Template Name: Interiores
 <section class="contenido">
 
   <article class="noticias">
+    <?php echo 'estoy en PAGE Interiores'; ?>
     <div class="mapeo"><?php the_breadcrumb(); ?></div>    
 
 
