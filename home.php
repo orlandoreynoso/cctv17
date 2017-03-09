@@ -37,7 +37,6 @@ Template Post Type: post, page, product
     </a>
   </div>
 
-
 </section>
 
 <section class="contenido">

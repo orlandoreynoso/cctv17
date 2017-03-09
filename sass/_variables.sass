@@ -1,13 +1,7 @@
-$colortexto: #474b4d
-$rosa: #d53132
-$grisoscuro: #333333
-$gris2: #8c8c8c
 $rojo: #b20013
-$celeste:#00bbd3
 $verde: #8ac249
-$verde2: #46b271
-
-
+$grisoscuro: #333333
+$celeste:#00bbd3
 $blanco: #fff
 $gris: #474b4d
 $azul: #003366
@@ -22,7 +16,135 @@ $fontopen: 'Open Sans', sans-serif
 $fontroboto: 'Roboto', sans-serif
 $fontstan: 'Old Standard TT', serif
 
+/*======== minin fecha ========*/
+@mixin mapeo()
+	width: 100%
+	padding: 20px
+	color: $celeste
+	text-align: left
+	margin-bottom: 20px
+	padding-bottom: 20px
+	border-bottom: 1px solid $limon
+	.raqadd
+		color: $gris
+		margin: 0px 4px 0px 4px
+	.raqspace
+		color: $gris
+		margin: 0px 4px 0px 4px
+	.raqa
+		a
+			color: $limon
+			margin: 0px 4px 0px 0px
+			&:hover
+				color: $celeste
+				margin: 0px 4px 0px 0px
+	.raq
+		margin: 0px 4px 0px 0px
+		color: $gris			
+	a
+		color: $limon
+		&:hover
+			color: $celeste
+/*===========================================*/
+
+@mixin fecha()
+	color: $blanco
+	text-align: right
+	text-transform: uppercase
+	font-weight: bold
+	width: 100%
+	span
+		width: 50%
+	.label2
+		background-color: $gris
+		height: 60px
+		width: 45%
+		font-size: 14px
+		padding: 4px 5px 4px 3px
+		text-align: center
+	.label1
+		background-color: $yema
+		height: 60px
+		width: 45%
+		font-size: 14px
+		padding: 4px 5px 4px 10px
+		text-align: center
+		color: $gris
 /*==========================*/
+@mixin sidebar()
+	.entradas
+		box-sizing: border-box
+		padding-top: 10px
+		.search
+			margin: 0px auto
+			padding-bottom: 10px
+			padding-top: 10px
+			padding-left: 10px
+		.titulo_entradas
+			padding: 10px
+			h3
+				font-size: 1.2em
+				color: $azul
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 10px 0px 10px 0px
+				padding: 0px
+		.recientes
+			margin-bottom: 20px
+			padding-left: 10px
+			padding-right: 10px
+			padding-top: 10px
+			.titulo_last
+				border-bottom: 1px solid $limon
+				margin: 0px 0px 20px 0px
+				padding: 0px 0px 10px 0px
+				color: $celeste
+				font-weight: bold
+				font-size: 1.5em			
+			.list
+				padding: 5px
+				margin-bottom: 5px
+				padding-bottom: 9px
+				overflow: hidden
+				border-bottom: 1px solid $celeste
+				text-transform: lowercase
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-between
+				align-items: center
+				box-sizing: border-box
+				.thumb
+					width: 20%
+					img
+						width: 90%
+						height: auto
+						display: inline-block
+						float: left
+						margin-right: 7px
+						box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+						border: 2px solid #ffffff
+						&:hover
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+							transition: 0.5s ease
+							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+				.title
+					color: $celeste
+					line-height: 1.3em
+					font-size: 1.1em
+					text-decoration: none
+					width: 78%
+					text-transform: lowercase
+					&:hover
+						color: $verde
+						transition: 0.5s ease
+						-o-transition: 0.5s ease
+						-webkit-transition: 0.5s ease
+					&:first-letter
+						text-transform: uppercase
+/*============================*/
 @mixin transiciontexto()
 	transition: color 0.25s ease-out
 

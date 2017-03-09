@@ -31,12 +31,12 @@
 	<div class="ca-cabecera">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-4 col-lg-6">
+				<div class="ml col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="ca-logo-slogan">
 						<a class="logo-link" href="<?php bloginfo('url'); ?>/"><img class="logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/canalarquidiocesano.jpg" alt="Canal Arquidiocesano"></a>
 					</div>			
 				</div>
-				<div class="col-sm-12 col-md-8 col-lg-6">
+				<div class="mr col-xs-12 col-sm-8 col-md-8 col-lg-8">
 					<div class="ca-search-followers">
 						<div class="buscador"><?php  get_search_form();  //  if (is_page(5)) {   dynamic_sidebar('busqueda-header');   }   ?></div>
 						<div class="cuadro-redes">
@@ -50,9 +50,16 @@
 		</div>
 	</div>
 </header>
-<div id="contenido_menu">
-	<nav id="navegacion" class="navegando">
-		<?php  showMenu();  ?>
-	</nav>	
+
+<div class="contenido_menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav id="navegacion" class="navegando">
+					<?php  showMenu();  ?>
+				</nav>			
+			</div>
+		</div>
+	</div>	
 </div>
 

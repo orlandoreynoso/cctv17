@@ -1,154 +1,84 @@
-@mixin logo($size)
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html,
+body,
+	margin: 0
+	padding: 0
+hr
+	color: $limon
+
+body
+	background-color: $blanco
+	font-family: $fontopen
+	font-size: 16px	
+/*======= Mixins =========================*/
+
+@mixin logo($sizew,$sizeh)
 	.logo-link
 		&:hover
 			opacity: 0.7
 			filter: alpha(opacity=70)
 		img
 			vertical-align: top
-			width: auto
-			height: $size
-@mixin buscaredes()
+			width: $sizew
+			height: $sizeh
+@mixin buscaredes($sizeb,$sizer)
 	.buscador
-		width: 75%
+		width: $sizeb
+		box-sizing: border-box
+		padding: 0px
+		margin: 0px
 	.cuadro-redes
-		width: 20%
+		width: $sizer
 		margin-left: 4px
 		display: flex
-		justify-content: space-between
-		padding: 6px
+		flex-flow: row wrap
+		justify-content: center
+		align-items: center
+		align-content: center
+		box-sizing: border-box		
 		color: $gris
 		a
 			text-decoration: none
 			@include transicion_a()
+			font-size: 25px
 		.yt
 			color: $gris
-			width: 100px
 			padding: 10px
 			&:hover
 				color: $limon
 		.fb
 			color: $gris
-			width: 100px
 			padding: 10px
 			&:hover
 				color: $limon
 		.tw
 			color: $gris
-			width: 100px
 			padding: 10px
 			&:hover
 				color: $limon
+
+/*============= header ==============================*/
+
 header
 	width: 100%
-	background-color: cyan
 	.ca-cabecera
 		width: 100%
+		padding-top: 10px
+		padding-bottom: 10px
 		.ca-logo-slogan
-			background-color: green
 			width: 100%
-			@include logo(150px)
+			@include logo(auto,120px)
 		.ca-search-followers
-			width: auto
-			max-height: 150px			
+			width: 100%
 			box-sizing: border-box
 			display: flex
-			justify-content: space-between
-			align-items: center
+			flex-flow: row wrap
 			padding-top: 40px
-			padding-bottom: 20px
-			background-color: red
-			@include buscaredes()
+			@include buscaredes(45%,45%)
+			.buscador
+				padding-top: 7px
 /*=========== Nuevo ==================*/
-
-
-/*===================================*/
-/*==============================*/
-#cabecera
-	width: 100%
-#cabecera-contenedor
-	max-width: 1024px
-	background-color: blue
-	display: flex
-	flex-direction: row
-	flex-wrap: wrap
-	justify-content: space-between
-	margin: 0px auto
-	align-items: center
-	padding: 20px
-	#cc-logo-slogan
-		width: 50%
-		vertical-align: top
-		display: flex
-		.logo-link
-			height: 150px
-			overflow: hidden
-			&:hover
-				opacity: 0.7
-				filter: alpha(opacity=70)
-			img
-				display: block
-				vertical-align: top
-				width: auto
-				height: 150px
-		.slogan
-			line-height: 30px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			margin-left: 16px
-			text-decoration: none
-			text-transform: uppercase
-			font-weight: bold
-			&:hover
-				color: $celeste
-			.one
-				color: $yema
-				font-size: 42px
-				@include transicion_a()  
-			.two
-				color: $gris
-				font-size: 30px
-				margin-top: 4px
-				@include transicion_a()  
-			span
-				font-family: 'monofontoregular'
-				@include transicion_a() 
-				&:hover
-					color: $celeste
-					@include transicion_a()
-	#cc-search-followers
-		width: 50%
-		display: flex
-		justify-content: space-between
-		align-items: center
-		.buscador
-			width: 75%
-		.cuadro-redes
-			width: 20%
-			margin-left: 4px
-			display: flex
-			justify-content: space-between
-			padding: 6px
-			color: $gris
-			a
-				text-decoration: none
-				@include transicion_a()
-			.yt
-				color: $gris
-				width: 100px
-				padding: 10px
-				&:hover
-					color: $limon
-			.fb
-				color: $gris
-				width: 100px
-				padding: 10px
-				&:hover
-					color: $limon
-			.tw
-				color: $gris
-				width: 100px
-				padding: 10px
-				&:hover
-					color: $limon
-
