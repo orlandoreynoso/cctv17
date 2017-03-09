@@ -2,8 +2,6 @@
 
 <?php 
 
-echo "<div class='titulo_last'>últimas noticias</div>";
-
 //  dynamic_sidebar('sidebar');   
 	ultimas_paginas();
 

@@ -1,12 +1,8 @@
 /*=========== Slide =========================*/
 .slide
-	max-width: 1024px
-	width: 100%
-	margin: 0px auto
-	padding: 0px 5px
 	box-sizing: border-box
-	overflow: hidden
 	background-color: $blanco
+	margin-top: 20px
 	.metaslider
 		box-sizing: border-box	
 		margin: 0px auto
@@ -26,7 +22,7 @@
 /*================= Player & Secciones ==========================*/		
 .player-seccions
 	margin: 0px auto
-	max-width: 1024px
+	max-width: 1170px
 	height: auto
 	background-color: $grismasclaro
 	display: flex
@@ -53,16 +49,14 @@
 			display: flex
 			flex-flow: row wrap
 			justify-content: center
-			padding: 20px
+			align-items: center
+			padding: 20px 0px
 			text-decoration: none
 			@include transicion_a()
 			@include sombra()
-			h2
-				font-size: 1.2em
-				vertical-align: middle
-				margin-top: 40%
-				span
-					margin-right: 5px
+			span
+				.fa
+					margin-right: 10px
 		.seccions_2
 			background-color: $limon
 			padding-left: 3px
@@ -100,12 +94,6 @@
 
 /*====================== contenido ========================== */
 .con-general
-	.redes
-		margin-bottom: 10px
-		width: 100%
-		box-sizing: border-box
-		iframe
-			width: 100%
 	.noticias
 		.titulo_noticias
 			border-bottom: 1px solid $yema

@@ -15,6 +15,7 @@ $oro: #fec006
 $fontopen: 'Open Sans', sans-serif
 $fontroboto: 'Roboto', sans-serif
 $fontstan: 'Old Standard TT', serif
+$fontos: 'Oswald', sans-serif
 
 /*======== minin fecha ========*/
 @mixin mapeo()
@@ -84,9 +85,9 @@ $fontstan: 'Old Standard TT', serif
 			padding: 10px
 			h3
 				font-size: 1.2em
-				color: $azul
+				color: $celeste
 				text-transform: uppercase
-				font-family: 'Oswald', sans-serif
+				font-family: $fontos
 				margin: 10px 0px 10px 0px
 				padding: 0px
 		.recientes
@@ -94,56 +95,54 @@ $fontstan: 'Old Standard TT', serif
 			padding-left: 10px
 			padding-right: 10px
 			padding-top: 10px
-			.titulo_last
-				border-bottom: 1px solid $limon
-				margin: 0px 0px 20px 0px
-				padding: 0px 0px 10px 0px
-				color: $celeste
-				font-weight: bold
-				font-size: 1.5em			
-			.list
-				padding: 5px
-				margin-bottom: 5px
-				padding-bottom: 9px
-				overflow: hidden
-				border-bottom: 1px solid $celeste
-				text-transform: lowercase
-				display: flex
-				flex-flow: row wrap
-				justify-content: space-between
-				align-items: center
-				box-sizing: border-box
-				.thumb
-					width: 20%
-					img
-						width: 90%
-						height: auto
-						display: inline-block
-						float: left
-						margin-right: 7px
-						box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
-						border: 2px solid #ffffff
-						&:hover
-							filter: alpha(opacity=50)
-							-moz-opacity: 1.0
-							opacity: 0.5
-							-khml-opacity: 1.0
-							transition: 0.5s ease
-							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
-				.title
-					color: $celeste
-					line-height: 1.3em
-					font-size: 1.1em
-					text-decoration: none
-					width: 78%
+			.facebook
+				width: 100%
+				text-align: center
+			.entradas_recientes
+				margin-bottom: 10px
+				.list
+					padding: 5px
+					margin-bottom: 5px
+					padding-bottom: 9px
+					overflow: hidden
+					border-bottom: 1px solid $celeste
 					text-transform: lowercase
-					&:hover
-						color: $verde
-						transition: 0.5s ease
-						-o-transition: 0.5s ease
-						-webkit-transition: 0.5s ease
-					&:first-letter
-						text-transform: uppercase
+					display: flex
+					flex-flow: row wrap
+					justify-content: space-between
+					align-items: center
+					box-sizing: border-box
+					.thumb
+						width: 20%
+						img
+							width: 90%
+							height: auto
+							display: inline-block
+							float: left
+							margin-right: 7px
+							box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+							border: 2px solid #ffffff
+							&:hover
+								filter: alpha(opacity=50)
+								-moz-opacity: 1.0
+								opacity: 0.5
+								-khml-opacity: 1.0
+								transition: 0.5s ease
+								box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+					.title
+						color: $celeste
+						line-height: 1.3em
+						font-size: 1.1em
+						text-decoration: none
+						width: 78%
+						text-transform: lowercase
+						&:hover
+							color: $verde
+							transition: 0.5s ease
+							-o-transition: 0.5s ease
+							-webkit-transition: 0.5s ease
+						&:first-letter
+							text-transform: uppercase
 /*============================*/
 @mixin transiciontexto()
 	transition: color 0.25s ease-out
@@ -287,7 +286,6 @@ $fontstan: 'Old Standard TT', serif
 	border-radius: 150px
 	-webkit-border-radius: 150px
 	-moz-border-radius: 150px
-
 
 @mixin sombra()
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8) 

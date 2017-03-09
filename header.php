@@ -9,11 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
-	<!--link rel="stylesheet" href="<?php // bloginfo('stylesheet_directory'); ?>/css/estilo.css" -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/theme.css">	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--script type="text/javascript" src="<?php // bloginfo('template_url'); ?>/js/google.js"></script -->
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/google.js"></script>
 	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon-16x16.png" sizes="16x16">
@@ -54,7 +53,7 @@
 <div class="contenido_menu">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-md-12">
 				<nav id="navegacion" class="navegando">
 					<?php  showMenu();  ?>
 				</nav>			

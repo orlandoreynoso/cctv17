@@ -9,60 +9,56 @@
 
 ?>
 
-<section class="contenido">
+<section class="con-general">
 
-  <article class="noticias">
-    <?php echo 'Estoy en categorias'; ?>
-    <div class="mapeo"><?php the_breadcrumb(); ?></div>        
+  <div class="container">
+     <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 con">
+            <?php // echo 'estoy en category'; ?>
+          <div class="titulo">
+            <div class="mapeo"><?php the_breadcrumb(); ?></div>
+          </div>
+            <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-<!-- Título de categoría -->
-<h2><?php single_cat_title(); ?></h2>
-<!-- Listado de posts -->
-<?php if ( have_posts() ) : ?>
-
-
-
-    <?php while ( have_posts() ) : the_post(); ?>
-
-<div class="entradas-noticias">
-
-  <div class="fecha">
-    <span class="label1"><?php the_time('j  '); ?></span>
-    <span class="label2"><?php the_time('F '); ?></span>
-  </div>
-
-  <div class="contenido">
-      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <?php the_excerpt();  ?>
-  </div>
-
-   
-</div>
-
-    <?php endwhile; ?>
+           <div class="contenido">
+                  <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  <div class="date-cat">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 fecha">                        
+                            <span class="label1"><i class="icon-date fa fa-calendar"></i><?php the_time('j  '); ?></span>
+                            <span class="label2"><?php the_time('F '); ?></span>
+                          </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 descripcion_categoria"><i class="icon-file fa fa-file"></i><a class="cat"><?php the_category (' , '); ?></a></div>
+                    </div>
+                  </div>
+                  <div class="thumb">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>              
+                  </div>
+                  <div class="info"><?php the_excerpt();  ?></div>
+            </div>   
 
 
-    <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>
-    <!-- div class="pagination">
-      <span class="in-left"><?php // next_posts_link('« Entradas antiguas'); ?></span>
-      <span class="in-right"><?php // previous_posts_link('Entradas más recientes »'); ?></span>
-    </div -->
-  
-
-
-<?php else : ?>
-  <p><?php _e('Ups!, no hay entradas.'); ?></p>
-<?php endif; ?>
-
-  </article>
-
-  <aside class="redes">
-    <!-- Archivo de barra lateral por defecto -->
-      <?php get_sidebar(); ?>
-      <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FTvArquidiocesana&width=292&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true&appId=165911470135594" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:590px;" allowTransparency="true"></iframe>      
-  </aside>  
-
+          <?php endwhile; ?>
+          <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>
+          <?php else : ?>
+          <p><?php _e('Ups!, no hay entradas.'); ?></p>
+          <?php endif; ?>
+       </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 side">
+          <div class="entradas">
+            <div class="titulo_entradas"><h3>Entradas recientes</h3></div>
+            <div class="recientes">
+              <?php get_sidebar(); ?>
+              <div class="facebook">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FTvArquidiocesana&width=292&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true&appId=165911470135594" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:590px;" allowTransparency="true"></iframe>                    
+              </div>
+            </div>  
+          </div> 
+      </div>    
+    </div>      
+    </div>
+    
 </section>
 
 
