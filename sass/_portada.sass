@@ -19,17 +19,20 @@
 		margin: 0px auto
 		vertical-align: top
 
-/*================= Player & Secciones ==========================*/		
+/*================= Player & Secciones ==========================*/	
+.tv-play
+	background-color: $grismasclaro
+	padding: 40px 0px
+	box-sizing: border-box
 .player-seccions
 	margin: 0px auto
-	max-width: 1170px
+	width: 100% // 1170px
 	height: auto
-	background-color: $grismasclaro
 	display: flex
 	flex-wrap: wrap
 	flex-direction: row
 	justify-content: space-between
-	padding: 30px 5px 15px 5px
+	box-sizing: border-box
 	.seccions
 		width: 50%
 		height: auto
@@ -93,6 +96,100 @@
 			margin: 0px
 
 /*====================== contenido ========================== */
+.tv-seccion
+	background-color: $grismasclaro
+	padding: 30px 0px
+	.last-news
+		width: 100%
+		box-sizing: border-box
+		padding-bottom: 30px
+		.last
+			box-sizing: border-box
+			overflow: hidden
+			.veamos
+				.todo
+					overflow: hidden
+					background-color: $blanco
+					margin-bottom: 20px
+					.footer-news
+						display: flex
+						flex-flow: row wrap
+						justify-content: space-between
+						padding: 5px 10px
+						.fecha
+							font-size: 0.7em
+							color: $grisx
+						.name_cat
+							font-size: 0.7em
+							ul
+								list-style: none
+								li
+									display: inline-block
+									padding: 4px
+									transition: 0.5s ease									
+									a
+										text-decoration: none
+									&:nth-child(odd)
+										background-color: $oro										
+										&:hover
+											background-color: $gris
+											a
+												color: $blanco
+										a
+											color: $gris
+											display: block											
+									&:nth-child(even)
+										background-color: $gris																				
+										&:hover
+											background-color: $oro
+											a
+												color: $gris
+										a
+											color: $blanco
+											display: block
+					.title
+						color: $verde
+						font-size: 1em
+						display: block
+						height: 90px
+						padding: 20px 10px
+						text-align: center
+						box-sizing: border-box
+						transition: 0.5s ease
+						&:hover
+							text-decoration: none
+							color: $gris
+					.thumb
+						height: auto
+						width: 100%
+						margin-bottom: 20px
+						display: block
+						padding: 0px 10px
+						img
+							width: 100%
+							max-height: 200px
+							vertical-align: top //		@include sombra()
+							@include borde(2px,$blanco)
+							&:hover
+								@include opacidad(50)
+								@include transicion_a() //	@include sombra_hover()
+			.list
+				display: none
+				overflow: hidden
+				font-size: 1em
+				border-bottom: 1px solid $grismasclaro
+				padding: 10px 10px
+		.titulo_noticias
+			border-bottom: 1px solid $yema
+			margin: 0px 0px 20px 0px
+			padding: 0px
+			h2
+				color: $limon
+			h1
+				color: $limon
+				font-size: 1.5em		
+
+/*=============================================================*/
 .con-general
 	.noticias
 		.titulo_noticias

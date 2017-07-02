@@ -45,6 +45,22 @@ if ( $the_query->have_posts() ) {
 /* Restore original Post Data */
 wp_reset_postdata();  
 }
+
+/*-- Funcion de Stracto --*/
+
+
+/**
+*  $long es una variable para indicar de cuantos caracteres de
+*   longitud queremos nuestro extracto
+*/
+function excerpt($num) {
+    $limit = $num+1;
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt)."...";
+    echo $excerpt;
+}
+
 /*========= ULTIMAS NOTICIAS ===================*/
 /*=====================================*/
 function ultimas_noticias(){
@@ -64,7 +80,7 @@ function ultimas_noticias(){
         'order'               => 'DESC',
         'orderby'             => 'date',
         //Pagination Parameters
-        'posts_per_page'         => 5,
+        'posts_per_page'         => 9,
         'posts_per_archive_page' => 10,
     );
   // The Query
@@ -75,15 +91,37 @@ if ( $the_query->have_posts() ) {
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 veamos">        
+<div class="todo">
+  <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+  <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+        
+<div class="list">
+    <?php 
+
+     $hola = get_the_excerpt();
+
+
+
+    $hola = substr($hola, 0, 130);
+
+    // echo $hola;
+
+    ?>
+</div>
+
+<div class="footer-news">
+        <div class="name_cat">
+           <?php the_category(''); ?>
+        </div>
+
   <div class="fecha">
     <span class="label1"><?php the_time('j  '); ?></span>
     <span class="label2"><?php the_time('F '); ?></span>
   </div>
-        
-<div class="list">
-    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a> 
-    <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-    <?php the_excerpt(); ?>
+</div>
+  </div>
 </div>
 <?php
          }} else {
