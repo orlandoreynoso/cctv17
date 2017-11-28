@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*Distintos fondos*/
 /* devuelve el directorio de stilo de css, y se le asigna a temppath */
 define('TEMPPATH',get_bloginfo('stylesheet_directory'));
@@ -11,16 +11,14 @@ add_theme_support('post-thumbnails');
 
 //add_image_size( $name, $width, $height, $crop );
 
-the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles 
-
+the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles
 the_post_thumbnail('medium');          // Tamaño de la mediano 300x300 píxeles
-
-the_post_thumbnail('large');   
-
+the_post_thumbnail('large');
 the_post_thumbnail('full'); // La resolución original
 
 //set_post_thumbnail_size(1024,1024,true );
 
+include (TEMPLATEPATH. '/inc/estilos.php');
 
 /*========================================================*/
 function mi_menu(){
@@ -42,7 +40,7 @@ function showMenu(){
 function my_init() {
         if( !is_admin()){
         wp_deregister_script('jquery');
-        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true); 
+        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true);
         wp_enqueue_script('jquery');
         }
 }
@@ -53,14 +51,14 @@ function menu_two(){
 ?>
   <div class="iconos-01">
         <a class="linkopacity" href="<?php bloginfo('url'); ?>/tv-en-linea/"><img src="<?php echo IMAGES; ?>/icon-tv.png"></a>
-  </div>  
-<?php 
+  </div>
+<?php
 }
 
-include (TEMPLATEPATH . '/libs/entradas.php'); 
+include (TEMPLATEPATH . '/libs/entradas.php');
 include (TEMPLATEPATH . '/libs/totop.php');
-include (TEMPLATEPATH . '/libs/breadcrumb.php'); 
-include (TEMPLATEPATH . '/libs/paginacion.php'); 
+include (TEMPLATEPATH . '/libs/breadcrumb.php');
+include (TEMPLATEPATH . '/libs/paginacion.php');
 paginacion();
 // El apk viene del css
 // Tags: white, two-columns, responsive layout

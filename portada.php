@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 
@@ -16,16 +16,16 @@ Template Name: Portada
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <?php 
-         // Este es para la pagina oficial echo do_shortcode("[metaslider id=188]"); 
+        <?php
+         // Este es para la pagina oficial echo do_shortcode("[metaslider id=188]");
         ?>
-        <?php 
-          echo do_shortcode("[metaslider id=188]"); 
+        <?php
+          echo do_shortcode("[metaslider id=188]");
         ?>
       </div>
-    </div>  
+    </div>
   </div>
-</section> 
+</section>
 
 
 
@@ -47,12 +47,12 @@ Template Name: Portada
         <span><i class="icon-cogs fa fa-cog"></i>Amigos</span>
     </a>
     <a  href="<?php bloginfo('url'); ?>/programas" class="secciones seccions_3">
-        <span><i class="icon-cogs fa fa-tv"></i>Programas</span>      
+        <span><i class="icon-cogs fa fa-tv"></i>Programas</span>
     </a>
     <a  href="<?php bloginfo('url'); ?>/cobertura" class="secciones seccions_4">
-        <span><i class="icon-location2 fa fa-map-marker"></i>Cobertura</span>      
+        <span><i class="icon-location2 fa fa-map-marker"></i>Cobertura</span>
     </a>
-  </div>  
+  </div>
   </article>
   </div>
 </div>
@@ -65,7 +65,7 @@ Template Name: Portada
      <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-8 con">
             <article class="noticias">
-              <div class="titulo_noticias"><h2>CODIFICACIÓN SATELITAL</h2></div>              
+              <div class="titulo_noticias"><h2>CODIFICACIÓN SATELITAL</h2></div>
                   <?php
                 // Start the loop.
                 while ( have_posts() ) : the_post();
@@ -82,7 +82,7 @@ Template Name: Portada
                 endwhile;
                 ?>
 
-               <?php  the_content(); ?> 
+               <?php  the_content(); ?>
 
             <?php //  ultimas_noticias(); ?>
             </article>
@@ -93,11 +93,11 @@ Template Name: Portada
             <div class="recientes">
               <?php // get_sidebar(); ?>
               <div class="facebook">
-                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FTvArquidiocesana&width=292&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true&appId=165911470135594" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:590px;" allowTransparency="true"></iframe>                    
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FTvArquidiocesana&width=292&height=590&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true&appId=165911470135594" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:590px;" allowTransparency="true"></iframe>
               </div>
-            </div>  
-          </div> 
-      </div>      
+            </div>
+          </div>
+      </div>
      </div>
   </div>
 </section>
@@ -109,14 +109,14 @@ Template Name: Portada
 
     <div class="col-xs-12 col-sm-12 col-md-8 last-news">
       <div class="titulo_noticias"><h2>ÚLTIMAS NOTICIAS</h2></div>
-      <?php ultimas_noticias(); ?>      
+      <?php ultimas_noticias(); ?>
     </div>
 
     </div>
 
-  </div>  
-</section> 
-  
+  </div>
+</section>
+
 
 
 <?php get_footer(); ?>
