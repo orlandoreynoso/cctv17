@@ -8,7 +8,7 @@
           </iframe>
         </div>
       </div>
-      <div class="seccions">
+      <div class="caminantes">
         <?php get_template_part( 'template/cover','telemaraton'); ?>
       </div>
     </article>

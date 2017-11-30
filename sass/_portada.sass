@@ -34,6 +34,43 @@
 	flex-direction: row
 	justify-content: space-between
 	box-sizing: border-box
+	.caminantes
+		background-color: $yema
+		width: 50%
+		box-sizing: border-box
+		padding: 0px 20px 20px 20px
+		@media screen and (max-width: 480px) /* 480 a  0*/
+			width: var(--sizem)
+		@media screen and (max-width: 768px) /* de 768 a cero. 0**/
+			width: var(--sizem)
+		.titulo-cam
+			text-align: center
+			padding: 0px 5px 5px 5px
+			p
+				font-size: 1.3em
+			.resumen16
+				margin: 7px 0px
+				p
+					font-size: 1.2em
+			.btn-2017,
+			.btn-2016
+				padding: 15px 20px
+				margin: 0px auto 5px auto
+				display: block
+				background-color: $grisoscuro
+				color: $blanco
+				border-radius: 3px
+				width: 350px
+				text-decoration: none
+				transition: 0.5s ease
+				&:hover
+					background-color: $verde
+					color: $grisoscuro
+					transition: 0.5s ease
+			h3
+				font-size: 1.5em
+				color: $grisoscuro
+				font-weight: 400
 	.seccions
 		width: 50%
 		height: auto
