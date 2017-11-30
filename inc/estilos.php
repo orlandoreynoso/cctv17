@@ -23,8 +23,9 @@ function estilos_template(){
 	//registrar Js, agregamos al final true para que nuestros Js se cargen en el footer.
 	//wp_register_script('google', get_template_directory_uri().'/js/google.js', array(), '1.0.0', true );
   wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', array('jquery'),'1.12.5', true);
-	wp_register_script('bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array('jquery'),'4.0.0', true);
-  wp_register_script('scripts', get_template_directory_uri().'/js/scripts.js', array('jquery'),'1.0.0', true);
+	wp_register_script('bootstrapjs', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'),'1.0.0', true);
+  wp_register_script('prefixfree', get_template_directory_uri().'/js/prefixfree.min.js', array('jquery'),'1.0.0', true);
+  wp_register_script('scripts', get_template_directory_uri().'/js/cargas.js', array('jquery'),'1.0.0', true);
   wp_register_script('lightbox', get_template_directory_uri().'/js/lightbox.js', array('jquery'),'2.9.0', true);
   wp_register_script('waypoints', get_template_directory_uri().'/js/jquery.waypoints.min.js', array(),'2.9.0', true);
   wp_register_script('sticky', get_template_directory_uri().'/js/jquery.sticky.js', array('jquery'),'2.9.0', true);
@@ -35,6 +36,7 @@ function estilos_template(){
   wp_enqueue_script('popper');
 	wp_enqueue_script('bootstrapjs');
 	wp_enqueue_script('scripts');
+  wp_enqueue_script('prefixfree');
   wp_enqueue_script('lightbox');
   wp_enqueue_script('waypoints');
   wp_enqueue_script('sticky');

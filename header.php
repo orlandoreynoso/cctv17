@@ -12,7 +12,6 @@
 	<meta name="theme-color" content="#ffffff">
 	<?php wp_head(); ?>
 
-
 </head>
 <body>
 

@@ -1,0 +1,53 @@
+/* en player section 1170px  */
+.n-sec-div
+	background-color: red
+	padding: 20px
+	box-sizing: border-box
+	.n-contenidos
+		width: 100%
+		height: auto
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: stretch
+		box-sizing: border-box
+		@include transicion_a()
+		.infos
+			width: 46%
+			background-color: $limon
+			text-align: center
+			color: $blanco
+			margin: 8px
+			box-sizing: border-box
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			align-items: center
+			padding: 20px 0px
+			text-decoration: none
+			@include transicion_a()
+			@include sombra()
+			span
+				.fa
+					margin-right: 10px
+		.data_2
+			background-color: $limon
+			padding-left: 3px
+			color: $blanco
+			&:hover
+				background-color: $celeste
+		.data_1
+			background-color: $oro
+			padding-left: 3px
+			&:hover
+				background-color: $limon
+		.data_3
+			background-color: $celeste
+			padding-left: 3px
+			&:hover
+				background-color: $oro
+		.data_4
+			background-color: $oro
+			padding-left: 3px
+			&:hover
+				background-color: $limon
