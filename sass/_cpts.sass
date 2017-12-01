@@ -32,86 +32,84 @@
 			@include mapeo()
 .con-cpts
 	.con
-		background-color: red
-		display: flex
-		flex-direction: row
-		flex-wrap: wrap
 		box-sizing: border-box
-		padding: 10px
-		.contenido
-			margin-bottom: 10px
-			padding-bottom: 10px
-			margin-top: 10px
-			width: calc(var(--sizem)/2)
-			border: 1px solid $verde
-			.title
-				font-size: 1.5em
-				font-family: $fontos
-				color: $celeste
-				&:hover
-					color: $verde
-			.date-cat
-				padding: 10px
-				.fecha
+		.cuadro-cpts
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			box-sizing: border-box
+			.contenido
+				width: calc(var(--sizem)/2)
+				border: 1px solid $verde
+				box-sizing: border-box
+				.title
+					font-size: 1.5em
 					font-family: $fontos
-					font-size: 0.9em
-					color: $blanco
-					.icon-date
-						color: $gris
-						margin-right: 6px
-					span
-						width: 50%
-					.label2
-						background-color: $gris
-						height: 60px
-						width: 45%
-						font-size: 14px
-						padding: 4px 5px 4px 3px
-						text-align: center
-						vertical-align: middle
-					.label1
-						background-color: $yema
-						height: 60px
-						width: 45%
-						font-size: 14px
-						padding: 4px 5px 4px 10px
-						text-align: center
-						vertical-align: middle
-						color: $gris
-				.descripcion_categoria
-					font-family: $fontos
-					font-size: 0.9em
-					float: right
-					text-align: right
-					color: $azul
-					.icon-file
-						margin-right: 5px
-						color: $verde
-					a
-						color: $gris
-						&:hover
-							color: $celeste
-			.thumb
-				padding: 5px
-				img
-					width: 100%
-					height: auto
-					&:hover
-						filter: alpha(opacity=50)
-						-moz-opacity: 1.0
-						opacity: 0.5
-						-khml-opacity: 1.0
-						transition: 0.5s ease
-						box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
-			.info
-				padding: 5px 10px 10px 10px
-				line-height: 1.625em
-				font-size: 1.0625em
-				color: #302f2f
-				font-family: $fontopen
-				h1
 					color: $celeste
-				h2
-					color: $verde
+					&:hover
+						color: $verde
+				.date-cat
+					padding: 10px
+					.fecha
+						font-family: $fontos
+						font-size: 0.9em
+						color: $blanco
+						.icon-date
+							color: $gris
+							margin-right: 6px
+						span
+							width: 50%
+						.label2
+							background-color: $gris
+							height: 60px
+							width: 45%
+							font-size: 14px
+							padding: 4px 5px 4px 3px
+							text-align: center
+							vertical-align: middle
+						.label1
+							background-color: $yema
+							height: 60px
+							width: 45%
+							font-size: 14px
+							padding: 4px 5px 4px 10px
+							text-align: center
+							vertical-align: middle
+							color: $gris
+					.descripcion_categoria
+						font-family: $fontos
+						font-size: 0.9em
+						float: right
+						text-align: right
+						color: $azul
+						.icon-file
+							margin-right: 5px
+							color: $verde
+						a
+							color: $gris
+							&:hover
+								color: $celeste
+				.thumb
+					padding: 5px
+					img
+						width: 100%
+						height: auto
+						&:hover
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+							transition: 0.5s ease
+							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+				.info
+					padding: 5px 10px 10px 10px
+					line-height: 1.625em
+					font-size: 1.0625em
+					color: #302f2f
+					font-family: $fontopen
+					h1
+						color: $celeste
+					h2
+						color: $verde
 	.side
 		@include sidebar()
