@@ -8,8 +8,9 @@
           </iframe>
         </div>
       </div>
-      <div class="caminantes">
-        <?php get_template_part( 'template/cover','telemaraton'); ?>
+      <div class="vatican">
+        <?php // get_template_part( 'template/cover','telemaraton'); ?>
+        <?php get_template_part( 'template/cover','vatican'); ?>
       </div>
     </article>
     </div>

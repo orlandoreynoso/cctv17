@@ -161,6 +161,26 @@ header {
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box; }
+  .player-seccions .vatican {
+    background-color: #ffd933;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+    .player-seccions .vatican .replay {
+      text-align: center; }
+      .player-seccions .vatican .replay::after {
+        color: #333333;
+        content: "clic para reproducir tv Vaticano...";
+        text-align: center;
+        bottom: 5px;
+        width: 100%;
+        left: 0;
+        right: 0; }
+      .player-seccions .vatican .replay iframe {
+        width: 100%;
+        box-sizing: border-box; }
   .player-seccions .caminantes {
     background-color: #ffd933;
     width: 50%;
@@ -258,10 +278,15 @@ header {
     width: 50%;
     padding: 0px;
     margin: 0px;
-    background-color: #333333; }
+    background-color: #333333;
+    text-align: center; }
     .player-seccions .player::after {
       color: #fff;
-      content: "Cargando television en vivo...."; }
+      content: "Cargando television en vivo....";
+      text-align: center;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      bottom: 5px; }
     .player-seccions .player iframe {
       width: 100%;
       height: 415px;

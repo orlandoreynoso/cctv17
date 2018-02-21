@@ -28,10 +28,10 @@ Template Name: Portada
 </section>
 
 
-<?php get_template_part( 'template/cover','stream'); ?>
-<div class="n-sec-div">
-    <?php get_template_part( 'template/cover','seccioneshome'); ?>
-</div>
+<?php get_template_part( 'template/cover','streamold'); ?>
+<!--div class="n-sec-div">
+    <?php // get_template_part( 'template/cover','seccioneshome'); ?>
+</div -->
 
 <section class="con-general">
 	<div class="container">

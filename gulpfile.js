@@ -26,14 +26,14 @@ var sass        = require('gulp-sass');
 /*====== TAREA DE MIMIFICACIÓN ===========*/
 gulp.task('tareaMinify',function(){
 	console.log('minifiando js con tarea: tareaMinify');
-	return gulp.src('./js/*.js')
+	return gulp.src('./incjs/*.js')
 	.pipe(concat('all.js'))
 	.pipe(uglify({
 		compress:{
 			drop_console: true
 		}
 	}))
-	.pipe(gulp.dest('./destino/js'));
+	.pipe(gulp.dest('./js'));
 
 });
 
@@ -52,7 +52,9 @@ gulp.task('browser-sync', function(done) {
     './template/*.php',
     './inc/*.php',
     'libs/*.php',
-    './*.js'
+		'./incjs/*.js',
+    './*.js',
+		'./woocommerce/*.php'
     ];
 
     //initialize browsersync
@@ -85,15 +87,17 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.sass', ['sass']);
 });
+
+
 // Compile sass into CSS & auto-inject into browsers
-/*
+
 gulp.task('sass', function() {
   return gulp.src("./sass/estilo.sass")
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 });
-*/
+
 gulp.task('watchMeJs',function(){
 	gulp.watch('./js/*.js',['tareaMinify'], function(){
 		console.log('escucuando cambios js...');
@@ -102,7 +106,7 @@ gulp.task('watchMeJs',function(){
 
 //gulp.task('default', ['sass', 'serve']);
 
-gulp.task('default',['browser-sync','watchMeJs','sass:watch'],function(done){
+gulp.task('default',['browser-sync','watchMeJs','sass:watch','sass'],function(done){
 	console.log('ejecutando watch wuju....');
   browserSync.reload();
   done();
