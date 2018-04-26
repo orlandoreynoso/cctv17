@@ -1,0 +1,10 @@
+# Incluir expresamente en el repositorio todos los ficheros con extensión php
+#no incluir esta carpeta
+/node_modules
+#no incluis este archivo
+package.json
+package-lock.json
+#no incluir el js.
+package.json
+#no inclir php work.
+noworkfile.php
